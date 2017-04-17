@@ -154,7 +154,6 @@ DEPENDENCIES
   puma (~> 3.7)
   rails (~> 5.1.0.rc1)
   selenium-webdriver
-  tzinfo-data
   web-console (>= 3.3.0)
 
 BUNDLED WITH
