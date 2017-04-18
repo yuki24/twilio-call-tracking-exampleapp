@@ -1,7 +1,7 @@
 class CallStatusUpdatesController < ApplicationController
-
   def create
-    @incoming_call = IncomingCall.find(params[:incoming_call_id])
+    @call_route    = CallRoute.find(params[:call_route_id])
+    @incoming_call = @call_route.incoming_calls.find(params[:incoming_call_id])
     @incoming_call.call_status_updates.create!(call_status_update_params)
   end
 

@@ -1,6 +1,7 @@
 class CreateIncomingCalls < ActiveRecord::Migration[5.1]
   def change
     create_table :incoming_calls do |t|
+      t.belongs_to :call_route, foreign_key: true
       t.date :api_version
       t.string :account_sid
       t.string :call_sid

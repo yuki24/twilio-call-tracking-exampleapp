@@ -3,8 +3,8 @@
   <Dial>
     <Number
       statusCallbackEvent="initiated ringing answered completed"
-      statusCallback="<%= incoming_call_status_updates_url(@incoming_call) %>">
-      ***REMOVED***
+      statusCallback="<%= call_route_incoming_call_status_updates_url(@call_route, @incoming_call) %>">
+      <%= @call_route.forward_to_number %>
     </Number>
   </Dial>
 </Response>

@@ -2,7 +2,8 @@ class IncomingCallsController < ApplicationController
   layout :false
 
   def create
-    @incoming_call = IncomingCall.new(incoming_call_params)
+    @call_route    = CallRoute.find(params[:call_route_id])
+    @incoming_call = @call_route.incoming_calls.new(incoming_call_params)
 
     if @incoming_call.save
       # do nothing for now...
@@ -33,13 +34,13 @@ class IncomingCallsController < ApplicationController
       :from,
       :from_city,
       :from_country,
-      :from_state
+      :from_state,
       :from_zip,
       :to,
       :to_city,
       :to_country,
       :to_state,
-      :to_zip,
+      :to_zip
     )
   end
 end
