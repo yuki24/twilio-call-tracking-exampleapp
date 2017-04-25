@@ -9,5 +9,5 @@ call to your personal phone number. It also tracks ang logs all incoming calls a
 
 You can deploy this app to Heroku by just clicking the button below:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/yuki24/twilio-call-tracking-exampleapp/tree/master)
 
