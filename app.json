@@ -1,5 +1,5 @@
 {
-  "name": "Call Tracking with Twilio",
+  "name": "Call Tracking",
   "description": "An example app that tracks incoming phone calls.",
   "repository": "https://github.com/yuki24/twilio-call-tracking-exampleapp",
   "keywords": ["ruby", "rails", "twilio", "call tracking"],
