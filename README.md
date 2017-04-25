@@ -14,6 +14,6 @@ You can deploy this app to Heroku by just clicking the button below:
 ## How to use
 
 Once you deployed yor app to heroku, you should be able to open `http://yourappname.herokuapp.com/admin/call_routes` (replace `yourappname`
-with yours). Try creating your first call route and actually try to call it.
+with yours). Try creating your first call route and actually call it!
 
 ![Tracking example](https://raw.githubusercontent.com/yuki24/twilio-call-tracking-exampleapp/master/screenshots/incoming-call-exmaple.png)
