@@ -8,7 +8,6 @@ end
 gem 'rails', '~> 5.1.0.rc1'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
-gem 'jbuilder', '~> 2.5'
 gem "administrate"
 gem 'twilio-ruby'
 
