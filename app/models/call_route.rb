@@ -3,6 +3,8 @@ class CallRoute < ApplicationRecord
 
   include Rails.application.routes.url_helpers
 
+  attr_accessor :host_with_protocol
+
   before_create do
     @number = TWILIO_CLIENT.available_phone_numbers.get('US').local.list.first
     @number = TWILIO_CLIENT.incoming_phone_numbers.create(phone_number: @number.phone_number)
@@ -12,7 +14,7 @@ class CallRoute < ApplicationRecord
   end
 
   after_create do
-    @number.update(voice_url: call_route_incoming_calls_url(self, host: ENV['APP_HOST'], format: :xml))
+    @number.update(voice_url: call_route_incoming_calls_url(self, host: host_with_protocol, format: :xml))
   end
 
   before_destroy do

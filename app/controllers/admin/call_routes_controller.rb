@@ -17,5 +17,9 @@ module Admin
 
     # See https://administrate-prototype.herokuapp.com/customizing_controller_actions
     # for more information
+    #
+    def resource_params
+      super.merge(host_with_protocol: "#{request.protocol}#{request.host_with_port}")
+    end
   end
 end
