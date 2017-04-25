@@ -10,5 +10,13 @@
     "TWILIO_AUTH_TOKEN": {
       "description": "Your twilio account's auth token that can be found on https://www.twilio.com/console"
     }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ],
+  "scripts": {
+    "postdeploy": "bundle exec rake db:migrate"
   }
 }
