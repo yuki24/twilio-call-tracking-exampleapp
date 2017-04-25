@@ -1,2 +1,0 @@
-class CallRoutesController < ApplicationController
-end
