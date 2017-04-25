@@ -1,24 +1,13 @@
-# README
+## Call tracking example app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app lets you acquire a phone number and assign your personal phone number to the number you purhased.
+If a phone call is made to the phone number that was purchased through this app, this app will forward the
+call to your personal phone number. It also tracks ang logs all incoming calls and call statuses 
+(e.g. answered or not).
 
-Things you may want to cover:
+## Deployment to heroku
 
-* Ruby version
+You can deploy this app to Heroku by just clicking the button below:
 
-* System dependencies
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

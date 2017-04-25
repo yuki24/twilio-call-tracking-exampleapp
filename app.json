@@ -1,0 +1,14 @@
+{
+  "name": "Call tracking example app with Twilio",
+  "description": "An example app that tracks incoming phone calls.",
+  "repository": "https://github.com/yuki24/twilio-call-tracking-exampleapp",
+  "keywords": ["ruby", "rails", "twilio", "call tracking"],
+  "env": {
+    "TWILIO_ACCOUNT_SID": {
+      "description": "Your twilio account's SID that can be found on https://www.twilio.com/console"
+    },
+    "TWILIO_AUTH_TOKEN": {
+      "description": "Your twilio account's auth token that can be found on https://www.twilio.com/console"
+    }
+  }
+}
