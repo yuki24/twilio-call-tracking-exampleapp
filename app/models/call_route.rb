@@ -12,7 +12,7 @@ class CallRoute < ApplicationRecord
   end
 
   after_create do
-    @number.update(voice_url: call_route_incoming_calls_url(self, host: ENV['APP_HOST']))
+    @number.update(voice_url: call_route_incoming_calls_url(self, host: ENV['APP_HOST'], format: :xml))
   end
 
   before_destroy do
